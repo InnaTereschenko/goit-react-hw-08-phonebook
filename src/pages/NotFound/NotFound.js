@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
 alineItems: 'center',
-
+paddingTop: '15px',
 }
 
 const NotFound = () => {

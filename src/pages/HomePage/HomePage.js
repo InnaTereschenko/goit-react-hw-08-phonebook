@@ -14,7 +14,11 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     letterSpacing: 'calc(1em / 10)',
-    color: '058484',
+    color: '#058484',
+    
+    // color: #14fcfc;
+    textShadow: '0px 4px 6px rgb(249, 249, 6)',
+    marginBottom: '20px',
   },
 };
 

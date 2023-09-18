@@ -1,10 +1,10 @@
 import { useState } from 'react';
 // import { setContacts } from 'redux/contactSlice';
 import css from './ContactForm.module.css';
-import {addContacts} from 'redux/operetions';
+import {addContacts} from 'redux/contacts/operetions';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 

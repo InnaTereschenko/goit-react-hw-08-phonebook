@@ -1,22 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {register, logIn, logOut, refreshUser} from './authOperations';
+import { register, logIn, logOut, refreshUser } from './authOperations';
 
- const initialState = {
-    user: { name: null, email: null },
-    token: null,
-     isLoggedIn: false,
-        isRefreshing: false, 
-     userRefreshed: false, //вказує, чи вже було оновлено дані користувача в поточному сеансі (незалежно від стану isRefreshingUser). 
-    
+const initialState = {
+  user: { name: null, email: null },
+  token: null,
+  isLoggedIn: false,
+  isRefreshing: false,
+  userRefreshed: false, 
 };
 
 const authSlice = createSlice({
-    name: 'auth',
-    initialState,
-    extraReducers:
-    builder => {
-          builder
+  name: 'auth',
+  initialState,
+  extraReducers: builder => {
+    builder
       .addCase(register.fulfilled, (state, action) => {
+        console.log('register.fulfilled action:', action);
+
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
@@ -31,7 +31,7 @@ const authSlice = createSlice({
         state.token = null;
         state.isLoggedIn = false;
       })
-               
+
       .addCase(refreshUser.pending, state => {
         state.isRefreshing = true;
       })
@@ -43,11 +43,7 @@ const authSlice = createSlice({
       .addCase(refreshUser.rejected, state => {
         state.isRefreshing = false;
       });
-    },
-    
-    
+  },
 });
-
-
 
 export default authSlice.reducer;

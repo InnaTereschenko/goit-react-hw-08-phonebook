@@ -16,7 +16,7 @@ const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 export function App() {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
   useEffect(() => {
@@ -33,21 +33,27 @@ export function App() {
           <Route
             path="/register"
             element={
-              <RestrictedRoute component={RegisterPage} redirectTo='/contcts' />
+              <RestrictedRoute
+                component={RegisterPage}
+                redirectTo="/contacts"
+              />
             }
           />
           <Route
             path="/login"
             element={
-              <RestrictedRoute component={LoginPage} redirectTo='/contacts' />
+              <RestrictedRoute component={LoginPage} redirectTo="/contacts" />
             }
           />
-          <Route path="/contacts" element={<PrivateRoute components={ContactsPage} redirectTo='/login' />}/>
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute components={ContactsPage} redirectTo="/login" />
+            }
+          />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Container>
-
   );
 }
-

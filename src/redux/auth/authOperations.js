@@ -62,7 +62,7 @@ const token = {
  *
  * 1. Забираем токен зі стейту через getState()
  * 2. Якщо токена немає, виходимо не виконуючи ніяких операцій
- * 3. Якщо токен є, додає його в HTTP-заголовок и виконуємо операцію
+ * 3. Якщо токен є, додаємо його в HTTP-заголовок и виконуємо операцію
  */
  export const refreshUser = createAsyncThunk(
   'auth/refresh',
@@ -71,7 +71,7 @@ const token = {
     const persistedToken = state.auth.token;
 
     if (persistedToken === null) {
-      console.log('Токена немає, виходимо з fetchCurrentUser');
+      console.log('Токена немає, виходимо з refreshUser');
       return thunkAPI.rejectWithValue('Unable to fetch user');
         }
        token.set(persistedToken);
