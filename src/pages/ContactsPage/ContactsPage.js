@@ -6,7 +6,7 @@ import { selectContacts } from '../../redux/contacts/selectors.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from '../../redux/contacts/operetions';
 
-export function App() {
+ function ContactsPage() {
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 
@@ -27,4 +27,6 @@ export function App() {
       )}
     </div>
   );
-}
+};
+
+export default ContactsPage;
