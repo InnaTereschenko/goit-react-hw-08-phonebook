@@ -14,7 +14,7 @@ const UserMenu = () => {
     <div className={styles.container}>
       <img src={avatar} alt="User" width="32" className={styles.avatar} />
       <span className={styles.name}>Welcome, {user.name}</span>
-      <button type="button" onClick={() => dispatch(logOut())}>
+      <button type="button" className="btnLogOut" onClick={() => dispatch(logOut())}>
         Log Out
       </button>
     </div>

@@ -10,3 +10,32 @@ margin: 5px;
 .name{
     font-size: 18px;
 }
+
+.btnLogOut{
+    background-color: #4feeb6;
+  text-decoration: none;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  padding: 0 10px;
+  display: inline-block;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.btnLogOut:hover {
+  color: #00ff2a;
+  background-color: #6f2ad6;
+
+  box-shadow: inset 0px 2px 4px rgba(0, 255, 255, 0.3),
+    inset 0px 4px 8px rgba(0, 255, 255, 0.3),
+    inset 0px 8px 16px rgba(0, 255, 255, 0.3);
+  transition: 0.2s;
+  transform: translateY(2px);
+}

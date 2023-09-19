@@ -29,7 +29,7 @@ export function App() {
     <Container>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<HomePage/>} />
           <Route
             path="/register"
             element={
