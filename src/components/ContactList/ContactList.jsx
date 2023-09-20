@@ -13,8 +13,7 @@ export const ContactList = () => {
    const filteredContacts = useSelector(selectFilteredContacts);
   const dispatch = useDispatch();
  
-
-  
+ 
   useEffect(() => {
     dispatch(fetchContacts())
   }, [dispatch]);
@@ -30,7 +29,7 @@ export const ContactList = () => {
           ) : (
                     
               
-              filteredContacts.map(({ id, name, phone }) => (
+              filteredContacts.map(({ id, name, number:phone }) => (
                 <ContactListItem
                   key={id}
                   id={id}

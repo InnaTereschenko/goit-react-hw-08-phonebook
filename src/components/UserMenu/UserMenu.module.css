@@ -1,27 +1,31 @@
-.container{
-    display: flex;
-    align-items: center;
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.avatar{
-margin: 5px;
+.avatar {
+  margin: 5px;
 }
 
-.name{
-    font-size: 18px;
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
-.btnLogOut{
-    background-color: #4feeb6;
+.btnLogOut {
+  background-color: #4feeb6;
   text-decoration: none;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 150px;
   height: 40px;
   margin: 10px;
   text-align: center;
   padding: 0 10px;
   display: inline-block;
-
+  border: none;
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;

@@ -30,28 +30,6 @@ export function ContactForm() {
     }
   };
   
-//   const reducerInput = (state, action) => {
-
-//     switch (action.type) {
-//       case 'name':
-//         return { ...state, name: action.payload };
-//       case 'phone':
-//         return { ...state, number: action.payload };
-//       case 'reset':
-//         return initialValue;
-//       default:
-//         return state;
-//     }
-//   };
-
-//  const initialValue = { name: '', number: '' };
-
-//   const [{ name, number }, dispatchReducer] = useReducer(reducerInput, initialValue);
-
-//   const handleInputChange = evt => {
-//     const { name, value } = evt.target;
-//     dispatchReducer({ type: name, payload: value });
-//   };
 
   
   const isUniqueName = name => {

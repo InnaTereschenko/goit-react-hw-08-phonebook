@@ -39,3 +39,7 @@
   transition: 0.2s;
   transform: translateY(2px);
 }
+
+.authNav{
+  display: flex;
+}

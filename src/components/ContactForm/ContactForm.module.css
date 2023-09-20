@@ -1,19 +1,19 @@
 .nameTxt {
   font-size: 23px;
   font-weight: 700;
-  color: rgb(44, 44, 181);
+  color: rgb(27, 27, 227);
   text-shadow: 0px 4px 3px rgba(252, 252, 252, 0.6),
-    0px 8px 13px rgba(236, 244, 5, 0.2),
-    0px 18px 23px rgba(49, 248, 5, 0.2);
+    0px 8px 13px rgba(236, 244, 5, 0.4),
+    0px 18px 23px rgba(49, 248, 5, 0.3);
 }
 
 .addContactBtn {
   border-radius: 10px;
   height: 30px;
-  border-color: rgb(82, 82, 218);
-  box-shadow: 0 0 10px #f6f6f5, 0 0 20px #f5f551, 0 0 30px #ffffec;
+  border-color: rgb(157, 157, 240);
+  box-shadow: 0 0 10px #f6f6f5, 0 5px 20px #f5f551, 0 0 30px #ffffec;
 
-  color: rgb(44, 44, 194);
+  color: rgb(24, 30, 215);
   font-weight: 700;
   cursor: pointer;
   transition: all 500ms ease;
@@ -26,7 +26,7 @@
 }
 
 .contactForm {
-  padding-top: 130px;
+  padding-top: 20px;
   display: flex;
   gap: 20px;
   flex-direction: column;
