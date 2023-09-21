@@ -24,10 +24,13 @@ function RegisterForm() {
 
   const handleSubmit = evt => {
     evt.preventDefault();
+    const form = evt.currentTarget;
     dispatch(register({ name, email, password }));
-    setName('');
-    setEmail('');
-    setPassword('');
+
+    form.reset();
+    // setName('');
+    // setEmail('');
+    // setPassword('');
   };
 
   return (
